@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-strict-di>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title ng-bind="title"></title>
+    <base href="/">
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide { display: none !important; }
+    </style>
+		
+		<link rel="stylesheet" href="styles/lib-4f42a75251.css">
+		
+		<link rel="stylesheet" href="styles/app-94abe713fa.css">
+		
+</head>
+<body>
+    <div>
+        <div ng-include="'app/layout/shell.html'"></div>
+        <!-- <div id="splash-page" ng-show="false">
+            <div class="page-splash">
+                <div class="page-splash-message">
+                    Gulp
+                </div>
+                <div class="progress progress-striped active page-progress-bar">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+		
+		<script src="js/lib-05d3d5f84a.js"></script>
+		
+		<script src="js/app-0e416662be.js"></script>
+</body>
+</html>
